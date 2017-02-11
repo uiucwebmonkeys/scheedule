@@ -1,4 +1,5 @@
 import React from 'react';
+import Text from './text';
 
 class Root extends React.Component {
   constructor(props) {
@@ -8,7 +9,7 @@ class Root extends React.Component {
   render() {
     return (
       <div>
-        <h1>Hello, Webmonkeys!!</h1>
+        <Text>Hello, Webmonkeys!!</Text>
       </div>
     );
   }
