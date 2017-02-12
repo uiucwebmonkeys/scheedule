@@ -1,3 +1,10 @@
 p {
   font-size: 16px;
 }
+.MainNavbar {
+	background: #FF9333;
+	color: #ffffff;
+}
+#NavBrand {
+	color: #ffffff;
+}

@@ -1,5 +1,6 @@
 import React from 'react';
 import Text from './text';
+import MainNavbar from './navbar';
 
 class Root extends React.Component {
   constructor(props) {
@@ -9,7 +10,7 @@ class Root extends React.Component {
   render() {
     return (
       <div>
-        <Text>Hello, Webmonkeys!!</Text>
+        <MainNavbar />
       </div>
     );
   }
