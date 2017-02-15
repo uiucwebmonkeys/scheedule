@@ -1,8 +1,6 @@
 Welcome to Scheedule, ACM@UIUC Webmonkeys' project beginning in Spring 2017
 
-Prerequisite:
-- npm must be installed on your computer (included with installation of Node.js)
-
+How to get started:
 Run these commands in your terminal
 ```bash
 git clone https://github.com/uiucwebmonkeys/scheedule

@@ -1,10 +1,23 @@
-p {
-  font-size: 16px;
+/*default style for app text*/
+.app-text {
+  font-family: 'Open Sans', sans-serif;
 }
+
+/*default style for app buttons*/
+.app-button {
+  background: #B900FF;
+	color: #ffffff;
+}
+
+.app-icon {
+  padding-right: 4px;
+}
+
 .MainNavbar {
 	background: #FF9333;
 	color: #ffffff;
 }
+
 #NavBrand {
 	color: #ffffff;
 }

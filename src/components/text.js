@@ -3,11 +3,12 @@ import React from 'react';
 class Text extends React.Component {
   constructor(props) {
     super(props);
+    this.style = "app-text " + props.styleme;
   }
 
   render() {
     return (
-      <p>{this.props.children}</p>
+      <span className={this.style}>{this.props.children}</span>
     );
   }
 }
