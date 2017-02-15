@@ -1,4 +1,5 @@
 import React from 'react';
+import Text from './text';
 import { Navbar } from 'react-bootstrap';
 
 class MainNavbar extends React.Component {
@@ -11,7 +12,7 @@ class MainNavbar extends React.Component {
       <Navbar className="MainNavbar">
         <Navbar.Header>
           <Navbar.Brand>
-            <a href="#" id="NavBrand">Scheedule</a>
+            <a href="#" id="NavBrand"><Text>Scheedule</Text></a>
           </Navbar.Brand>
         </Navbar.Header>
       </Navbar>
