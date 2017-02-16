@@ -1,6 +1,5 @@
 import React from 'react';
 import FontAwesome from 'react-fontawesome';
-import Text from './text'
 
 class AppIcon extends React.Component {
   constructor(props) {
@@ -9,7 +8,7 @@ class AppIcon extends React.Component {
 
   render() {
     return (
-      <Text><FontAwesome name={this.props.name} className="app-icon"/></Text>
+      <FontAwesome name={this.props.name} className="app-icon"/>
     );
   }
 }

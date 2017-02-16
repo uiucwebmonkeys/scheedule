@@ -17,7 +17,8 @@ class Root extends React.Component {
     return (
       <div>
         <MainNavbar />
-        <AppButton text="Auto-Schedule" onClick={this.appButtonClick} icon="magic"/>
+        <AppButton purple text="Auto-Schedule" onClick={this.appButtonClick} icon="magic"/>
+        <Text black font-size="40" tag="p">Hello, it's me.</Text>
       </div>
     );
   }

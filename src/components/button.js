@@ -18,10 +18,24 @@ class AppButton extends React.Component {
     }
   }
 
+  buildStyle(props){
+    var style = {};
+    var colors = {"purple":"#B900FF", "blue":"blue"};
+    for (var p in props) {
+      if (props.hasOwnProperty(p) && p !== "children"){
+        //console.log(p);
+        if (colors[p]){
+          style["backgroundColor"] = colors[p];
+        }
+      }
+    }
+    return style;
+  }
+
   //use conditional rendering to make sure an icon is only displayed if one is supplied in the definition
   render() {
     return (
-      <Button bsClass="btn app-button" className={this.props.styleme} onClick={this.buttonClicked}>
+      <Button bsClass="btn app-button" style={this.buildStyle(this.props)} onClick={this.buttonClicked}>
         {this.props.icon && <AppIcon name={this.props.icon}/>}
         <Text>{this.props.text}</Text>
       </Button>
