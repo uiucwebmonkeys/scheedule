@@ -19,6 +19,9 @@ class SearchBar extends React.Component {
                 if (p === "width") {
                     style["width"] = props[p] + "px";
                 }
+                if (p === "height") {
+                    style["height"] = props[p] + "px";
+                }
             }
         }
 

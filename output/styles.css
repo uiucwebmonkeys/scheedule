@@ -1,3 +1,7 @@
+body {
+	border-radius: 2px;
+}
+
 /*default style for app text*/
 .app-text {
   font-family: 'Open Sans', sans-serif;
@@ -6,7 +10,8 @@
 /*default style for app buttons*/
 .app-button {
   background: #B900FF;
-	color: #ffffff;
+  color: #ffffff;
+  border-radius: 2px;
 }
 
 .app-icon {
@@ -15,6 +20,7 @@
 
 .main-navbar {
 	background: #FF9333;
+	border-radius: 0;
 }
 #main-link {
 	color: #ffffff;
@@ -22,7 +28,9 @@
 
 #search {
 	background: #f1f1f1;
-	height: 40px;
+	border: none;
+	border-radius: 2px;
+	box-shadow: none;
 }
 
 input {

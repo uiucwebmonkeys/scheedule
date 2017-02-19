@@ -18,7 +18,7 @@ class Root extends React.Component {
     return (
       <div>
         <MainNavbar />
-        <SearchBar width="609" placeholder="e.g. CS225" />
+        <SearchBar width="600" height="40" placeholder="e.g. CS225" />
         <AppButton purple text="Auto-Schedule" onClick={this.appButtonClick} icon="magic"/>
         <Text black font-size="40" tag="p">Hello, it's me.</Text>
       </div>
