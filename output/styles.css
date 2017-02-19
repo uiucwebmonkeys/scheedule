@@ -13,12 +13,10 @@
   padding-right: 4px;
 }
 
-.MainNavbar {
+.main-navbar {
 	background: #FF9333;
-	color: #ffffff;
 }
-
-#NavBrand {
+#main-link {
 	color: #ffffff;
 }
 

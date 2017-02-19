@@ -1,5 +1,4 @@
 import React from 'react';
-import Text from './text';
 import { Navbar } from 'react-bootstrap';
 
 class MainNavbar extends React.Component {
@@ -9,10 +8,12 @@ class MainNavbar extends React.Component {
 
   render() {
     return (
-      <Navbar className="MainNavbar">
+      <Navbar className="main-navbar">
         <Navbar.Header>
           <Navbar.Brand>
-            <a href="#" id="NavBrand"><Text>Scheedule</Text></a>
+            <a href="#" id="main-link">
+              <text>Scheedule</text>
+            </a>
           </Navbar.Brand>
         </Navbar.Header>
       </Navbar>
