@@ -8,7 +8,7 @@ constructor(props){
 
 render(){
   	return(
-  		<div className={"class"+(this.props.selected ? "Green" : "")}>
+  		<div className={"class"+(this.props.selected ? "Green" : "")+(this.props.rejected ? "Red" : "")}>
   			<Text className="classSectionName">{this.props.classSection}</Text>
         <Text className="classTime">{this.props.classTime}</Text>
   		</div>

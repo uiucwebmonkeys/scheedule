@@ -33,6 +33,35 @@ body {
 	box-shadow: none;
 }
 
+.classList{
+	list-style-type: none;
+}
+.classResults{
+	background-color: #E8E8E8;
+}
+.class{
+	background-color: #C4C4C4;
+	width: 50%;
+}
+.classRed{
+	background-color: #EB5757;
+	width: 50%;
+}
+.classGreen{
+	background-color: #6FCF97;
+	width: 50%;
+}
+.className{
+	margin-bottom: 5px;
+}
+.classSectionName{
+	font-size: 14px;
+	text-align: left;
+}
+.classTime{
+	font-size: 10px;
+	text-align: center;
+}
 input {
 	font-family: 'Open Sans', sans-serif;
 }
