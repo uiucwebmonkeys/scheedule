@@ -1,7 +1,7 @@
 # Scheedule
 Welcome to Scheedule, ACM@UIUC Webmonkeys' project beginning in Spring 2017
 
-## How to get started:
+## How to get started
 Run these commands in your terminal
 ```bash
 git clone https://github.com/uiucwebmonkeys/scheedule

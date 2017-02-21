@@ -3,11 +3,12 @@ import React from 'react';
 class Text extends React.Component {
   constructor(props) {
     super(props);
+    this.classes = "app-text " + props.className;
   }
 
   buildStyle(props){
     var style = {};
-    var colors = ["black", "white"];
+    var colors = ["black", "white"]; //add other allowed text colors here
     for (var p in props) {
       if (props.hasOwnProperty(p) && p !== "children") {
         //console.log(p);
@@ -30,7 +31,7 @@ class Text extends React.Component {
 
   render() {
     return (
-      <span className="app-text" style={this.buildStyle(this.props)}>{this.props.children}</span>
+      <span className={this.classes} style={this.buildStyle(this.props)}>{this.props.children}</span>
     );
   }
 }
