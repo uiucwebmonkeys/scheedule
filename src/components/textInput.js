@@ -1,6 +1,6 @@
 import React from 'react';
 
-class SearchBar extends React.Component {
+class TextInput extends React.Component {
     constructor(props) {
         super(props);
         this.state = {value: ''};
@@ -38,4 +38,4 @@ class SearchBar extends React.Component {
     }
 }
 
-export default SearchBar;
+export default TextInput;
