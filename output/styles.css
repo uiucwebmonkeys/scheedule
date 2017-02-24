@@ -26,13 +26,6 @@ body {
 	color: #ffffff;
 }
 
-#search {
-	background: #f1f1f1;
-	border: none;
-	border-radius: 2px;
-	box-shadow: none;
-}
-
 .classList{
 	list-style-type: none;
 }
@@ -62,6 +55,11 @@ body {
 	font-size: 10px;
 	text-align: center;
 }
-input {
+
+.inputField {
 	font-family: 'Open Sans', sans-serif;
+	background: #f1f1f1;
+	border: none;
+	border-radius: 2px;
+	box-shadow: none;
 }

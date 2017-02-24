@@ -1,10 +1,10 @@
 import React from 'react';
+import { FormControl } from 'react-bootstrap';
 
 class TextInput extends React.Component {
     constructor(props) {
         super(props);
         this.state = {value: ''};
-
         this.handleChange = this.handleChange.bind(this);
     }
 
@@ -30,12 +30,18 @@ class TextInput extends React.Component {
 
     render() {
         return (
-            <div className="form-group">
-            <input type="text" value={this.state.value} onChange={this.handleChange} className="form-control" id="search"
-            style={this.buildStyle(this.props)} placeholder={this.props.placeholder} />
-            </div>
+          <FormControl
+            className={this.props.className}
+            type="text"
+            value={this.state.value}
+            onChange={this.handleChange}
+            style={this.buildStyle(this.props)}
+            placeholder={this.props.placeholder}
+          />
         );
     }
 }
 
 export default TextInput;
+
+//https://react-bootstrap.github.io/components.html#forms to add label, validation

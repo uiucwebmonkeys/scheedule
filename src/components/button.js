@@ -36,7 +36,7 @@ class AppButton extends React.Component {
   //use conditional rendering to make sure an icon is only displayed if one is supplied in the definition
   render() {
     return (
-      <Button bsClass={this.classes} style={this.buildStyle(this.props)} onClick={this.buttonClicked}>
+      <Button bsClass={this.classes} style={this.buildStyle(this.props)} onClick={this.buttonClicked} type="submit">
         {this.props.icon && <AppIcon name={this.props.icon}/>}
         <Text>{this.props.text}</Text>
       </Button>
