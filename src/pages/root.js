@@ -27,7 +27,6 @@ class Root extends React.Component {
               <center>
                 <TextInput width="609" placeholder="e.g. CS225" />
                 <AppButton purple text="Auto-Schedule" onClick={this.appButtonClick} icon="magic" className="app-button"/>
-                <Text black font-size="40" tag="p">Hello, it's me.</Text>
                 <ClassResultBox name="CS 196" sections={[ { name: "ADF", time:"19:00 - 19:50", selected: true, rejected: false}, { name: "ADG", time:"19:00 - 19:50", selected: false, rejected: false}, { name: "ADH", time:"19:00 - 19:50", selected: false, rejected: true} ]}/>
               </center>
             </Col>
