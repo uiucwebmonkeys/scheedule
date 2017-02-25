@@ -4,12 +4,6 @@ import { FormControl } from 'react-bootstrap';
 class TextInput extends React.Component {
     constructor(props) {
         super(props);
-        this.state = {value: ''};
-        this.handleChange = this.handleChange.bind(this);
-    }
-
-    handleChange(event) {
-        this.setState({value: event.target.value});
     }
 
     buildStyle(props) {
@@ -33,8 +27,7 @@ class TextInput extends React.Component {
           <FormControl
             className={this.props.className}
             type="text"
-            value={this.state.value}
-            onChange={this.handleChange}
+            onChange={this.props.onChange}
             style={this.buildStyle(this.props)}
             placeholder={this.props.placeholder}
           />

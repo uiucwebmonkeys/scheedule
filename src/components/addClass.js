@@ -6,12 +6,12 @@ import { addClass } from '../actions';
 import { Form } from 'react-bootstrap';
 
 let AddClass = ({ dispatch }) => {
+  var val = '';
   let input
   return (
     <div>
       <Form inline onSubmit={e => {
         e.preventDefault()
-        var val = input.state.value;
         if (!val.trim()) {
           return
         }
@@ -21,7 +21,10 @@ let AddClass = ({ dispatch }) => {
         <TextInput width="609" placeholder="e.g. CS225" className="inputField"
           ref={field => {
             input = field
-          }} />
+          }}
+          onChange={e => {
+            val = e.target.value
+          }}/>
         <AppButton icon="plus" text="Add Class"/>
       </Form>
     </div>
