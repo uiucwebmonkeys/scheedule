@@ -7,6 +7,7 @@ import TextInput from '../components/textInput';
 import ClassSectionBox from '../components/classSectionBox';
 import ClassResultBox from '../components/classResultBox';
 import AddClass from '../components/AddClass';
+import HorizontalLine from '../components/horizontalLine';
 
 class Root extends React.Component {
   constructor(props) {
@@ -27,6 +28,7 @@ class Root extends React.Component {
             <Col md={12} xs={12}>
               <center>
                 <AddClass/>
+                <HorizontalLine className="divideAddAndAuto" width="609" />
                 <AppButton purple text="Auto-Schedule" onClick={this.appButtonClick} icon="magic" className="app-button"/>
                 <ClassResultBox name="CS 196" sections={[ { name: "ADF", time:"19:00 - 19:50", selected: true, rejected: false}, { name: "ADG", time:"19:00 - 19:50", selected: false, rejected: false}, { name: "ADH", time:"19:00 - 19:50", selected: false, rejected: true} ]}/>
               </center>

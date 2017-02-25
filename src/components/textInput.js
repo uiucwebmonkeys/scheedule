@@ -2,37 +2,37 @@ import React from 'react';
 import { FormControl } from 'react-bootstrap';
 
 class TextInput extends React.Component {
-    constructor(props) {
-        super(props);
-    }
+  constructor(props) {
+    super(props);
+  }
 
-    buildStyle(props) {
-        var style = {};
-        for (var p in props) {
-            if (props.hasOwnProperty(p) && p !== "children") {
-                if (p === "width") {
-                    style["width"] = props[p] + "px";
-                }
-                if (p === "height") {
-                    style["height"] = props[p] + "px";
-                }
-            }
+  buildStyle(props) {
+    var style = {};
+    for (var p in props) {
+      if (props.hasOwnProperty(p) && p !== "children") {
+        if (p === "width") {
+          style["width"] = props[p] + "px";
         }
-
-        return style;
+        if (p === "height") {
+          style["height"] = props[p] + "px";
+        }
+      }
     }
 
-    render() {
-        return (
-          <FormControl
-            className={this.props.className}
-            type="text"
-            onChange={this.props.onChange}
-            style={this.buildStyle(this.props)}
-            placeholder={this.props.placeholder}
-          />
-        );
-    }
+    return style;
+  }
+
+  render() {
+    return (
+      <FormControl
+        className={this.props.className}
+        type="text"
+        onChange={this.props.onChange}
+        style={this.buildStyle(this.props)}
+        placeholder={this.props.placeholder}
+      />
+    );
+  }
 }
 
 export default TextInput;

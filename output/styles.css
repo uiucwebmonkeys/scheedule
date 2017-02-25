@@ -63,3 +63,8 @@ body {
 	border-radius: 2px;
 	box-shadow: none;
 }
+
+.addClass {
+	font-weight: normal;
+	display: block;
+}
