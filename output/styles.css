@@ -1,5 +1,4 @@
 body {
-	border-radius: 2px;
 }
 
 /*default style for app text*/
@@ -9,7 +8,6 @@ body {
 
 /*default style for app buttons*/
 .app-button {
-  background: #B900FF;
   color: #ffffff;
   border-radius: 2px;
 }
@@ -67,4 +65,7 @@ body {
 .addClass {
 	font-weight: normal;
 	display: block;
+}
+.add-class-btn {
+	border-radius: 0;
 }

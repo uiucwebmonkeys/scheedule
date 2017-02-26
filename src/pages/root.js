@@ -29,8 +29,9 @@ class Root extends React.Component {
               <center>
                 <AddClass/>
                 <HorizontalLine className="divideAddAndAuto" width="609" />
-                <AppButton purple text="Auto-Schedule" onClick={this.appButtonClick} icon="magic" className="app-button"/>
+                <AppButton purple text="Auto-Schedule" onClick={this.appButtonClick} icon="magic" />
                 <ClassResultBox name="CS 196" sections={[ { name: "ADF", time:"19:00 - 19:50", selected: true, rejected: false}, { name: "ADG", time:"19:00 - 19:50", selected: false, rejected: false}, { name: "ADH", time:"19:00 - 19:50", selected: false, rejected: true} ]}/>
+                <AppButton large text="Review Schedule" onClick={this.appButtonClick} icon="calendar" />
               </center>
             </Col>
           </Row>

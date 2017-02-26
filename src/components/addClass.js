@@ -27,7 +27,7 @@ let AddClass = ({ dispatch }) => {
           onChange={e => {
             val = e.target.value
           }}/>
-        <AppButton icon="plus" text="Add Class"/>
+        <AppButton icon="plus" text="Add Class" className="add-class-btn" />
       </Form>
     </div>
   )

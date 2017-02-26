@@ -7,7 +7,7 @@ class AppButton extends React.Component {
   constructor(props) {
     super(props);
     this.buttonClicked = this.buttonClicked.bind(this);
-    this.classes = "btn " + props.className;
+    this.classes = "btn app-button " + props.className;
   }
 
   //button click handler
@@ -24,7 +24,6 @@ class AppButton extends React.Component {
     var colors = {"purple":"#B900FF"}; //add more allowed colors for buttons here
     for (var p in props) {
       if (props.hasOwnProperty(p) && p !== "children"){
-        //console.log(p);
         if (colors[p]){
           style["backgroundColor"] = colors[p];
         }
