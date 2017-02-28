@@ -29,7 +29,8 @@ class Root extends React.Component {
               <center>
                 <AddClass/>
                 <HorizontalLine className="divideAddAndAuto" width="609" />
-                <AppButton purple text="Auto-Schedule" onClick={this.appButtonClick} icon="magic" />
+                <AppButton className="autoSchedule" purple text="Auto-Schedule" onClick={this.appButtonClick} icon="magic" />
+                <Text black tag="p" font-size="18">My Classes</Text>
                 <ClassResultBox name="CS 196" sections={[ { name: "ADF", time:"19:00 - 19:50",
                   selected: true, rejected: false},
                     { name: "ADG", time:"19:00 - 19:50", selected: false, rejected: false},
