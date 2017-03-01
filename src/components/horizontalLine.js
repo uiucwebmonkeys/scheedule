@@ -16,15 +16,15 @@ class HorizontalLine extends React.Component {
         }
 
         if (colors.indexOf(p) !== -1) {
-          style["border-top"] = "1px solid " + p;
+          style["borderTop"] = "1px solid " + p;
         }
 
         if (p === "margin-top") {
-          style["margin-top"] = props[p] + "px";
+          style["marginTop"] = props[p] + "px";
         }
 
         if (p === "margin-bottom") {
-          style["margin-bottom"] = props[p] + "px";
+          style["marginBottom"] = props[p] + "px";
         }
       }
     }
