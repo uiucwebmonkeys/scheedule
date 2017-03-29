@@ -1,14 +1,17 @@
 import React from 'react';
 import { Link } from 'react-router';
 import { Grid, Row, Col } from 'react-bootstrap';
+import { removeClass } from '../actions'
 import Text from '../components/text';
 import MainNavbar from '../components/navbar';
 import AppButton from '../components/button';
 import TextInput from '../components/textInput';
 import ClassSectionBox from '../components/classSectionBox';
 import ClassResultBox from '../components/classResultBox';
-import AddClass from '../components/AddClass';
+import AddClass from '../components/addClass';
 import HorizontalLine from '../components/horizontalLine';
+
+import { connect } from 'react-redux';
 
 class Root extends React.Component {
   constructor(props) {
@@ -39,6 +42,7 @@ class Root extends React.Component {
                   <AppButton large text="Review Schedule" onClick={this.appButtonClick} icon="calendar" />
                 </Link>
               </center>
+              {this.props.classes.map(classData => (<a onClick={() => {this.props.dispatch(removeClass(classData.text))}} >{classData.text}</a>))}
             </Col>
           </Row>
         </Grid>
@@ -47,4 +51,11 @@ class Root extends React.Component {
   }
 }
 
-export default Root;
+
+export default connect(
+  function(store) {
+    return ({
+      classes: store
+    })
+  }
+)(Root);

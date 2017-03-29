@@ -8,7 +8,7 @@ import { classReducer } from './reducers';
 import { addClass } from './actions';
 import { Router, Route, hashHistory, IndexRoute } from 'react-router';
 
-const store = createStore(classReducer);
+const store = createStore(classReducer, window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__());
 
 //test the store
 // subscribe() returns a function for unregistering the listener
